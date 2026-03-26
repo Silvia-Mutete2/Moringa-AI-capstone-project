@@ -163,11 +163,35 @@ Once you run the script, you'll see:
 
 ---
 
-## Tips for Your Capstone Submission
+## How AI Helped Me & What I Learned
 
-✅ Document every AI interaction in PROMPTS.md  
-✅ Run analysis_complete.R and save outputs (plots, cleaned data)  
-✅ Show regression coefficients with interpretation  
-✅ Include correlation matrix showing data relationships  
-✅ Reference both "how AI helped" and "what you learned"
+### How AI Helped
+
+1. **Scaffolded Complex Syntax** - AI provided exact code examples for `ggplot2()`, `dplyr` pipes, and model fitting. Instead of spending hours reading documentation, I had working code to modify and learn from.
+
+2. **Accelerated Problem-Solving** - When I encountered errors with package dependencies or data wrangling, AI explained the root cause and offered multiple solutions. This reduced debugging time from hours to minutes.
+
+3. **Introduced Best Practices** - AI recommended tidyverse over base R, explained when to use `%>%` pipes, and guided me on proper train/test splitting for modeling. I learned professional workflows, not just syntax.
+
+4. **Enabled Iteration** - AI helped me refine my analysis questions step-by-step. Starting from basic data import, I progressed to correlation analysis, regression modeling, and interpretation without feeling overwhelmed.
+
+5. **Boosted Confidence** - Each successful AI-assisted task (creating plots, building models, exporting data) reinforced my ability to tackle new challenges in R.
+
+### What I Learned
+
+1. **R Fundamentals** - Data import, inspection, transformation, and visualization using tidyverse. I now understand why R is preferred for statistical analysis.
+
+2. **Data Analysis Workflows** - The complete pipeline: load → explore → clean → analyze → visualize → export. This structured approach makes complex projects manageable.
+
+3. **Statistical Concepts** - Correlation analysis revealed strong relationships between study hours and academic performance. Linear regression showed me how to build predictive models and interpret R² values.
+
+4. **Visualization Power** - `ggplot2` layering allowed me to create publication-quality plots with minimal code. I learned how to communicate data stories effectively.
+
+5. **Reproducibility Importance** - Version-controlled scripts + documented prompts ensure my analysis can be understood and repeated by others. This is essential in data science.
+
+6. **AI as a Learning Tool** - AI is most powerful when I ask specific questions, experiment with suggestions, and reflect on what worked. It's a collaborator, not a replacement for thinking.
+
+### Key Takeaway
+
+This capstone proved that **AI + deliberate practice = accelerated learning**. I progressed from "I've never used R" to building a regression model and interpreting results in one session. The journey is documented in [PROMPTS.md](PROMPTS.md) for anyone following this path.
 
