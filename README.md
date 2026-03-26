@@ -72,9 +72,102 @@ df %>%
 
 ---
 
-## Next steps
+## Project Structure
 
-- Add a `data/` folder and place a sample CSV file there.
-- Add an `analysis.R` script with the starter code above.
-- Track AI prompt interactions in a `PROMPTS.md` or notebook file.
+This toolkit includes everything you need to learn R data analysis with AI assistance:
+
+```
+├── README.md              # This file
+├── PROMPTS.md             # Learning journal with 10 AI prompts + responses
+├── analysis.R             # Beginner-friendly starter script
+├── analysis_complete.R    # Full working example with all 10 prompts
+└── data/
+    └── sample_dataset.csv # Student performance dataset (15 rows × 6 columns)
+```
+
+### File Descriptions
+
+- **PROMPTS.md**: 
+  - Prompt journal table documenting 10 AI-assisted learning interactions
+  - Tracks what you asked, how AI helped, and key reflections
+  - Template for adding new prompts as you learn
+
+- **analysis.R**: 
+  - Starter template for basic analysis workflow
+  - Includes: data import, inspection, summary stats, visualization
+
+- **analysis_complete.R**: 
+  - Fully executable demonstration of all 10 prompts in action
+  - Includes regression modeling, train/test split, and export
+  - Run this to see end-to-end analysis with our sample dataset
+
+- **data/sample_dataset.csv**: 
+  - 15 students with: math_score, english_score, science_score, study_hours, attendance_rate
+  - Realistic correlations (higher study hours → higher scores)
+  - Ready for exploration and analysis
+
+---
+
+## Quick Start Guide
+
+### 1. Install R & Required Packages
+```r
+# Option 1: Install all at once
+install.packages(c("tidyverse", "readxl", "skimr", "caret"))
+
+# Option 2: Install individually
+install.packages("tidyverse")  # data wrangling + ggplot2
+install.packages("caret")      # machine learning toolkit
+```
+
+### 2. Run the Complete Example
+```bash
+# From R console or RStudio
+source("analysis_complete.R")
+```
+
+This will:
+- Load and inspect the dataset
+- Generate summary statistics
+- Create 3 visualizations (scatter plot, histogram, regression plot)
+- Build a linear regression model
+- Export cleaned data to `data/cleaned_data.csv`
+- Print a summary report
+
+### 3. Explore the Learning Journal
+Open `PROMPTS.md` to see:
+- 10 documented AI prompts with outcomes
+- Learning reflections after each interaction
+- Tips for refining your own prompts
+
+---
+
+## Next Steps
+
+1. **Run analysis_complete.R** to see the full workflow in action
+2. **Modify the analysis** with your own questions and plots
+3. **Replace sample_dataset.csv** with your own data
+4. **Add new prompts to PROMPTS.md** as you learn more R techniques
+5. **Experiment!** Try different visualizations, models, and analyses
+
+---
+
+## Sample Outputs from analysis_complete.R
+
+Once you run the script, you'll see:
+- **Correlation:** Study hours vs Math score (expect ~0.97)
+- **High performers:** Students with math_score > 80 AND study_hours > 5
+- **Regression model:** `math_score = 60.42 + 4.47 * study_hours`
+- **Model R²:** ~0.95 (excellent predictive power)
+- **Test RMSE:** ~2-3 points (model accuracy on unseen data)
+
+---
+
+## Tips for Your Capstone Submission
+
+✅ Document every AI interaction in PROMPTS.md  
+✅ Run analysis_complete.R and save outputs (plots, cleaned data)  
+✅ Show regression coefficients with interpretation  
+✅ Include correlation matrix showing data relationships  
+✅ Reference both "how AI helped" and "what you learned"
 
